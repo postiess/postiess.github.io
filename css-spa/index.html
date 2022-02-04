@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: black;
+        text-decoration: none;
+      }
+      body {
+        background: rgb(204, 204, 204);
+      }
+      nav {
+        padding: 2em;
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .home {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .links {
+        font-size: 1.5rem;
+        display: flex;
+        gap: 2em;
+      }
+      .content {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 2em;
+        position: relative;
+      }
+      .section {
+        display: none;
+        position: absolute;
+        background: rgb(204, 204, 204);
+        z-index: 2;
+        left: 0;
+        right: 0;
+        top: 0;
+      }
+      .section h1 {
+        font-size: 2.5em;
+        text-align: center;
+      }
+      .section div {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        padding: 1em;
+      }
+      .section div p {
+        font-size: 1em;
+        max-width: 750px;
+        padding: 2em 0 2em 0;
+      }
+      .section:target {
+        z-index: 3;
+        display: block;
+        background: rgb(204, 204, 204);
+      }
+      .section:first-of-type {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="home">
+          <a href="/">Blog</a>
+        </div>
+        <div class="links">
+          <a href="#first">First</a>
+          <a href="#second">Second</a>
+          <a href="#third">Third</a>
+        </div>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="section">
+        <h1>Home</h1>
+        <div>
+          <p>
+            Ultimate dead disgust against faithful hatred truth love virtues
+            chaos of. Chaos fearful insofar abstract pious superiority passion.
+            Insofar war endless abstract law sea intentions good revaluation.
+            Faithful justice evil horror god pious good chaos abstract
+            victorious intentions decieve ascetic moral. Marvelous aversion
+            overcome play right passion. Passion strong superiority chaos god
+            evil evil of ubermensch.
+          </p>
+        </div>
+      </section>
+      <section class="section" id="first">
+        <h1>First Post</h1>
+        <div>
+          <p>
+            Horror ocean decrepit zarathustra ubermensch joy pinnacle
+            revaluation snare. Pinnacle marvelous hope endless noble superiority
+            hope strong free abstract grandeur zarathustra deceptions. Grandeur
+            joy grandeur aversion oneself. Enlightenment pious ultimate joy
+            christian moral sexuality noble war. Horror snare depths prejudice
+            zarathustra moral sexuality intentions fearful disgust war decrepit
+            holiest. Morality will christian oneself noble war abstract. Pious
+            contradict inexpedient sexuality abstract morality.
+          </p>
+        </div>
+      </section>
+      <section class="section" id="second">
+        <h1>Second Post</h1>
+        <div>
+          <p>
+            Right decieve fearful faithful fearful hatred faith salvation
+            superiority chaos decrepit. Joy superiority god aversion faithful
+            mountains moral suicide eternal-return hope. Inexpedient decieve
+            good hope value fearful marvelous fearful grandeur against right law
+            will. Holiest justice eternal-return enlightenment christian evil
+            revaluation philosophy war ascetic contradict ultimate. Good pious
+            holiest burying superiority madness. Law decrepit ultimate spirit
+            convictions decieve value free good evil evil.
+          </p>
+        </div>
+      </section>
+      <section class="section" id="third">
+        <h1>Third Post</h1>
+        <div>
+          <p>
+            Against derive suicide holiest ubermensch sexuality. Madness
+            philosophy convictions chaos noble victorious victorious suicide
+            aversion war christian. Play good faith passion love. Aversion
+            society prejudice right of justice holiest horror hope marvelous
+            eternal-return ubermensch hope. Chaos good noble mountains madness
+            grandeur disgust. Revaluation evil morality decieve aversion
+            enlightenment overcome endless war justice. Zarathustra
+            enlightenment ultimate against justice horror depths truth holiest
+            battle. God hatred love law sexuality suicide hope intentions
+            ultimate joy deceptions suicide value horror. Noble law battle
+            disgust ultimate selfish passion oneself sexuality will virtues.
+            Evil.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
